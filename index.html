@@ -404,135 +404,174 @@
 
         @media (max-width: 768px) {
             body {
-                padding: 10px;
+                padding: 15px;
             }
 
             .cross-container {
-                margin: 15px 0;
+                margin: 20px 0 15px 0;
             }
 
             .cross {
-                width: 50px;
-                height: 70px;
+                width: 45px;
+                height: 60px;
+            }
+
+            .cross::before {
+                width: 10px;
+                height: 60px;
+            }
+
+            .cross::after {
+                width: 40px;
+                height: 10px;
+                top: 15px;
             }
 
             .header-section {
                 flex-direction: column;
-                gap: 10px;
+                gap: 12px;
                 margin-bottom: 15px;
             }
 
             .logo-frame {
-                width: 100px;
-                height: 100px;
+                width: 90px;
+                height: 90px;
             }
 
             .logo-placeholder {
-                font-size: 48px;
+                font-size: 40px;
             }
 
             h1 {
-                font-size: 28px;
+                font-size: 32px;
                 text-align: center;
             }
 
             .subtitle {
-                font-size: 13px;
-                padding: 0 20px;
+                font-size: 14px;
+                padding: 0 15px;
+                margin-bottom: 5px;
             }
 
             .youtube-subscription {
                 margin-top: 15px;
-                margin-bottom: 20px;
+                margin-bottom: 25px;
             }
 
             .youtube-subscription p {
                 font-size: 14px;
-                padding: 0 10px;
+                padding: 0 15px;
+                margin-bottom: 12px;
             }
 
             .youtube-button-container {
-                flex-direction: column;
-                gap: 5px;
+                flex-direction: row;
+                gap: 8px;
             }
 
             .youtube-button-container h3 {
-                font-size: 24px;
+                font-size: 26px;
             }
 
             .youtube-button-image {
-                width: 70px;
+                width: 65px;
             }
 
             .disclaimer {
                 padding: 15px;
-                margin: 20px 0;
+                margin: 20px 0 25px 0;
             }
 
             .disclaimer p {
                 font-size: 13px;
+                line-height: 1.5;
             }
 
+            /* KEY CHANGE: Stack cards vertically */
             .songs-grid {
-                gap: 15px;
-                padding: 5px;
+                flex-direction: column;
+                gap: 20px;
+                padding: 0;
+                overflow-x: visible;
+                scroll-snap-type: none;
             }
 
             .song-card {
-                min-width: 260px;
+                min-width: 100%;
+                width: 100%;
                 padding: 20px;
+                scroll-snap-align: none;
             }
 
+            /* Make album cover fit phone screen width properly */
             .album-cover-frame {
-                height: 180px;
+                height: 250px;
+                margin-bottom: 15px;
             }
 
             .song-title {
-                font-size: 18px;
+                font-size: 20px;
+                margin-bottom: 8px;
             }
 
             .song-artist {
-                font-size: 14px;
+                font-size: 15px;
+                margin-bottom: 8px;
             }
 
             .release-date {
-                font-size: 12px;
+                font-size: 13px;
+                margin-bottom: 12px;
+            }
+
+            .youtube-btn {
+                padding: 12px 20px;
+                font-size: 15px;
+                margin-bottom: 12px;
             }
 
             .quote-content {
-                padding: 25px 15px;
-                margin: 15px;
+                padding: 30px 20px;
+                margin: 20px;
                 max-width: 90%;
             }
 
             .quote-text {
-                font-size: 18px;
+                font-size: 19px;
+                line-height: 1.5;
             }
 
             .quote-reference {
                 font-size: 16px;
             }
 
+            .close-quote {
+                padding: 10px 25px;
+                font-size: 15px;
+            }
+
             .contact-section {
                 margin-top: 40px;
-                padding: 20px;
+                padding: 25px 15px;
             }
 
             .contact-icon {
-                font-size: 52px;
+                font-size: 56px;
+                margin-bottom: 12px;
             }
 
             .contact-section h2 {
-                font-size: 20px;
+                font-size: 22px;
+                margin-bottom: 8px;
             }
 
             .contact-section p {
-                font-size: 14px;
+                font-size: 15px;
             }
 
             footer {
-                font-size: 12px;
-                padding: 20px 10px;
+                font-size: 13px;
+                padding: 20px 15px;
                 margin-top: 30px;
             }
         }
