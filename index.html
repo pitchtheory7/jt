@@ -36,7 +36,7 @@
             align-items: center;
             justify-content: center;
             gap: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
 
         .logo-frame {
@@ -162,6 +162,66 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
+        .subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .youtube-subscription {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .youtube-subscription p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .youtube-button-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .youtube-button-container h3 {
+            margin: 0;
+            font-size: 40px;
+            color: #f5f5dc;
+        }
+
+        .youtube-button-image {
+            width: 80px;
+            height: auto;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .youtube-button-image:hover {
+            transform: scale(1.1);
+        }
+
+        .disclaimer {
+            background: rgba(245, 245, 220, 0.1);
+            border: 2px solid rgba(245, 245, 220, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .disclaimer p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
         .songs-grid {
             display: flex;
             gap: 25px;
@@ -282,6 +342,50 @@
             background-color: #667eea;
         }
 
+        .contact-section {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+        }
+
+        .contact-section a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .contact-icon {
+            font-size: 64px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .contact-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .contact-section h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #f5f5dc;
+        }
+
+        .contact-section p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 18px;
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.3);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            margin-top: 40px;
+            border-top: 2px solid rgba(245, 245, 220, 0.2);
+        }
+
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -299,15 +403,28 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .cross-container {
+                margin: 15px 0;
+            }
+
+            .cross {
+                width: 50px;
+                height: 70px;
+            }
+
             .header-section {
                 flex-direction: column;
-                gap: 15px;
-                margin-bottom: 30px;
+                gap: 10px;
+                margin-bottom: 15px;
             }
 
             .logo-frame {
-                width: 80px;
-                height: 80px;
+                width: 100px;
+                height: 100px;
             }
 
             .logo-placeholder {
@@ -315,24 +432,108 @@
             }
 
             h1 {
-                font-size: 32px;
+                font-size: 28px;
+                text-align: center;
+            }
+
+            .subtitle {
+                font-size: 13px;
+                padding: 0 20px;
+            }
+
+            .youtube-subscription {
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+
+            .youtube-subscription p {
+                font-size: 14px;
+                padding: 0 10px;
+            }
+
+            .youtube-button-container {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .youtube-button-container h3 {
+                font-size: 24px;
+            }
+
+            .youtube-button-image {
+                width: 70px;
+            }
+
+            .disclaimer {
+                padding: 15px;
+                margin: 20px 0;
+            }
+
+            .disclaimer p {
+                font-size: 13px;
             }
 
             .songs-grid {
                 gap: 15px;
+                padding: 5px;
             }
 
             .song-card {
-                min-width: 280px;
+                min-width: 260px;
+                padding: 20px;
+            }
+
+            .album-cover-frame {
+                height: 180px;
+            }
+
+            .song-title {
+                font-size: 18px;
+            }
+
+            .song-artist {
+                font-size: 14px;
+            }
+
+            .release-date {
+                font-size: 12px;
             }
 
             .quote-content {
-                padding: 30px 20px;
-                margin: 20px;
+                padding: 25px 15px;
+                margin: 15px;
+                max-width: 90%;
             }
 
             .quote-text {
+                font-size: 18px;
+            }
+
+            .quote-reference {
+                font-size: 16px;
+            }
+
+            .contact-section {
+                margin-top: 40px;
+                padding: 20px;
+            }
+
+            .contact-icon {
+                font-size: 52px;
+            }
+
+            .contact-section h2 {
                 font-size: 20px;
+            }
+
+            .contact-section p {
+                font-size: 14px;
+            }
+
+            footer {
+                font-size: 12px;
+                padding: 20px 10px;
+                margin-top: 30px;
             }
         }
     </style>
@@ -349,6 +550,20 @@
         <h1>Joyful Trumpet</h1>
     </div>
 
+    <div class="subtitle">
+        (preview all unreleased songs)
+    </div>
+
+    <div class="youtube-subscription">
+        <p>↓ Subscribe to our YouTube channel and stay tuned ↓</p>
+        <div class="youtube-button-container">
+            <h3>CLICK :</h3>
+            <a href="https://www.youtube.com/@PitchTheory-07" target="_blank">
+                <img src="youtube.png" alt="YouTube" class="youtube-button-image">
+            </a>
+        </div>
+    </div>
+
     <div class="quote-modal" id="quoteModal">
         <div class="quote-content">
             <div class="quote-text" id="quoteText"></div>
@@ -358,6 +573,10 @@
     </div>
 
     <div class="container">
+        <div class="disclaimer">
+            <p>⚠️ All rights to these songs are owned by Joyful Trumpet. Unauthorized reproduction or distribution is prohibited.</p>
+        </div>
+
         <div class="songs-grid">
             <div class="song-card">
                <div class="album-cover-frame">
@@ -432,24 +651,20 @@
                     Your browser does not support the audio element.
                 </audio>
             </div>
-
-            <!-- <div class="song-card">
-                <div class="album-cover-frame">
-                    <img src="./Cover Image/a2_c1.jpg" alt="Album Cover" class="album-cover-image">
-                </div>
-                <div class="song-title">Great Is Thy Faithfulness</div>
-                <div class="song-artist">Thomas Chisholm</div>
-                <div class="release-date">Expected Release: June 2026</div>
-                <a href="https://www.youtube.com/watch?v=example3" target="_blank" class="youtube-btn">
-                    ▶️ Watch on YouTube
-                </a>
-                <audio controls>
-                    <source src="sample6.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div> -->
         </div>
     </div>
+
+    <div class="contact-section">
+        <a href="mailto:pitchtheory7@gmail.com">
+            <div class="contact-icon">✉️</div>
+            <h2>Contact Us</h2>
+            <p>pitchtheory7@gmail.com</p>
+        </a>
+    </div>
+
+    <footer>
+        © 2026 All rights owned by Joyful Trumpet
+    </footer>
 
     <script>
         const quotes = [
@@ -534,5 +749,4 @@
         });
     </script>
 </body>
-
 </html>
